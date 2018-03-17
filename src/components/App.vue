@@ -1,5 +1,5 @@
 <template lang="html">
-    <div v-bind:style="containerStyle">
+    <div class="container">
         <h2 is="sui-header" icon>
             <sui-icon name="vuejs" />
             Vue Template
@@ -11,17 +11,16 @@
 </template>
 <script>
 export default {
-  name: 'app',
-  data() {
-    return {
-      containerStyle: {
-        width: `100%`,
-        display: 'flex',
-        'justify-content': 'space-around',
-        'align-items': 'center',
-        height: '50%'
-      }
-    }
-  }
+  name: 'app'
 }
 </script>
+
+<style lang="scss">
+.container {
+  width: 100%;
+  padding-top: 35px;
+  display: flex;
+  justify-content: space-around;
+}
+</style>
+
